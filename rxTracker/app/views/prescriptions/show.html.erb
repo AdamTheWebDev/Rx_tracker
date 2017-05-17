@@ -1,0 +1,9 @@
+<h2><%=@prescription.name%></h2>
+<p>Directions:<br> <%= @prescription.directions%></p>
+<p>Prescriber:<br> <%= @prescription.prescriber%></p>
+<p>NDC: <br> <%= @prescription.ndc%></p>
+
+
+<%=link_to "Back", root_path %>
+<%=link_to "Edit", edit_prescription_path(@prescription)%>
+<%=link_to "Delete", prescription_path(@prescription), method: :delete, data: {confirm: "Did your Doctor take you off this medication?"}%>

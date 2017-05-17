@@ -1,0 +1,10 @@
+<%= simple_form_for @prescription do |f| %>
+  <%= f.input :name, label: "Prescription Name"%>
+  <%= f.input :prescriber, label: "Prescriber"%>
+  <%= f.input :date, label: "Date Prescribed"%>
+  <%= f.input :strength, label: "Strength"%>
+  <%= f.input :directions, label: "Directions"%>
+  <%= f.input :refills, label: "Refills Available"%>
+  <%= f.input :ndc, label: "NDC Number"%>
+  <%= f.button :submit %>
+<%end %>

@@ -1,0 +1,6 @@
+<% @prescriptions.each do |prescription|%>
+<h1><%=prescription.name %></h1>
+<p><%=prescription.directions%></p>
+<%= link_to "View Prescription", prescription_path(prescription), class: "btn btn-default"%>
+<%end %>
+<%= link_to "New Presciption", new_prescription_path, class: "btn btn-default"%>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  date: 2017-05-17
+  prescriber: MyString
+  strength: MyString
+  directions: MyString
+  refills: 1
+  ndc: 1
+
+two:
+  name: MyString
+  date: 2017-05-17
+  prescriber: MyString
+  strength: MyString
+  directions: MyString
+  refills: 1
+  ndc: 1
