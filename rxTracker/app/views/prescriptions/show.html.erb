@@ -3,6 +3,17 @@
 <p>Prescriber:<br> <%= @prescription.prescriber%></p>
 <p>NDC: <br> <%= @prescription.ndc%></p>
 
+<%@parsedData = JSON.parse(@body)%>
+<h3>Image</h3>
+<ul>
+<% @parsedData["nlmRxImages"].each do |image|%>
+<li>
+<%= image[["nlmRxImages"][0][7]] %>
+<%puts image%>
+</li>
+<%=image_tag @prescription.image.url(:medium)%>
+<% end %>
+</ul>
 
 <%=link_to "Back", root_path %>
 <%=link_to "Edit", edit_prescription_path(@prescription)%>
