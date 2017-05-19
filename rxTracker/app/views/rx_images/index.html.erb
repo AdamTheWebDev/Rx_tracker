@@ -1,0 +1,21 @@
+<h1>RxImages#index</h1>
+<p>Find me in app/views/rx_images/index.html.erb</p>
+
+
+
+  <%=@prescription[:name]%><br>
+
+
+
+<img src="https://rximage.nlm.nih.gov/api/rximage/1/rxnav?parse=<%=@prescription[:name]%>>
+<br>
+
+<%@parsedData = JSON.parse(@body)%>
+<h3>Image</h3>
+<ul>
+<% @parsedData["nlmRxImages"].each do |image|%>
+<li>
+<%= .nlmRxImages[0].imageUrl %>
+</li>
+<% end %>
+</ul>

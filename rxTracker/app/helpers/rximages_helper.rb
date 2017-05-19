@@ -1,0 +1,2 @@
+module RximagesHelper
+end

@@ -1,0 +1,2 @@
+module RxImagesHelper
+end
