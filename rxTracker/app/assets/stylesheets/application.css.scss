@@ -16,6 +16,7 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+
  *{
  	box-sizing: border-box;
  }
@@ -57,24 +58,31 @@
  	letter-spacing: -1px;
  	font-size: 2em;
  	font-weight: 300;
- 	color: #1D976C !important;
+ 	color: #216979 !important;
  }
+ li{
+   color: #216979;
 
- #jobs {
- 	.job {
- 		padding: 1em 0;
- 		border-bottom: 1px solid rgba(250,250,250, 0.5);
- 		h2 {
- 			font-size: 2.5em;
- 			font-weight: 300;
- 			margin-bottom: 0;
- 			color: white;
- 			a {
- 				color: white;
- 			}
- 		}
- 		p {
- 			color: rgba(250,250,250, 0.5);
- 		}
- 	}
  }
+h1{
+  font-display: auto;
+  color: #216979;
+  border: 3px;
+  padding: 10px;
+  margin: 10px;
+}
+p{
+  font-size: 25px;
+  color: #0d2984;
+  padding: 10px;
+  margin: 10px;
+}
+.btn{
+  color: #216979;
+  padding: 10px;
+  margin: 10px;
+}
+a{
+  color: #216979;
+
+}
