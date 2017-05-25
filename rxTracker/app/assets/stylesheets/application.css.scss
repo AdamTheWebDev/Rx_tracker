@@ -65,6 +65,7 @@
 
  }
 h1{
+  text-align: center;
   font-display: auto;
   color: #216979;
   border: 3px;
@@ -72,17 +73,21 @@ h1{
   margin: 10px;
 }
 p{
+  text-align: center;
   font-size: 25px;
   color: #0d2984;
   padding: 10px;
   margin: 10px;
 }
 .btn{
+
   color: #216979;
   padding: 10px;
   margin: 10px;
 }
 a{
   color: #216979;
-
+}
+.alert{
+  color: #a2d2bd;
 }

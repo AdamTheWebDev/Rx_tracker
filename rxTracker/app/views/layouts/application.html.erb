@@ -23,12 +23,12 @@
               <%end%>
         </ul>
         <%if user_signed_in?%>
-        <li><%= link_to "New prescription", new_prescription_path, class:"navbar-right navbar-text navbar-link"%></li>
+        <li><%= link_to "New prescription", new_prescription_path, class:"navbar-right navbar-brand navbar-link"%></li>
         <%end%>
       </div>
     </div>
     <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <p class="alert">Prescription Manager<%= alert %></p>
 
 
     <%= yield %>

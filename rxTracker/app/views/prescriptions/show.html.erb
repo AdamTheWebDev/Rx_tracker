@@ -1,10 +1,10 @@
-<h2><%=@prescription.name%></h2>
+<h1><%=@prescription.name%></h1>
 <p>Directions:<br> <%= @prescription.directions%></p>
 <p>Prescriber:<br> <%= @prescription.prescriber%></p>
 <p>NDC: <br> <%= @prescription.ndc%></p>
 
 <%@parsedData = JSON.parse(@body)%>
-<h3>Image</h3>
+<h1>Image</h1>
 <ul>
 <% @parsedData["nlmRxImages"].each do |image|%>
 <li>
