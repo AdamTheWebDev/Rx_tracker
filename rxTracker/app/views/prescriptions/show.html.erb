@@ -6,12 +6,12 @@
 <%@parsedData = JSON.parse(@body)%>
 <h1>Image</h1>
 <ul>
-<% @parsedData["nlmRxImages"].each do |hi|%>
+<% @parsedData["nlmRxImages"].each do |image|%>
 <li>
-<%= hi[["nlmRxImages"][0][7]] %>
+<%= image[["nlmRxImages"][0][7]] %>
 </li>
-<% end %>
 <%=image_tag @prescription.image(:medium)%>
+<% end %>
 </ul>
 
 <%=link_to "Back", root_path %>

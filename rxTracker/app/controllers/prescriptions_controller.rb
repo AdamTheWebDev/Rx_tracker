@@ -24,7 +24,7 @@ def show
 
   response = http.request(request)
   puts response.read_body
-  @body = response.read_body
+  @body = response.body
 end
 
 def new
