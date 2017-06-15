@@ -1,18 +1,19 @@
 <h1><%=@prescription.name%></h1>
-<p>Directions:<br> <%= @prescription.directions%></p>
-<p>Prescriber:<br> <%= @prescription.prescriber%></p>
-<p>NDC: <br> <%= @prescription.ndc%></p>
+  <p>Directions:<br> <%= @prescription.directions%></p>
+  <p>Prescriber:<br> <%= @prescription.prescriber%></p>
+  <p>NDC: <br> <%= @prescription.ndc%></p>
 
 <%@parsedData = JSON.parse(@body)%>
-<h1>Image</h1>
-<ul>
-<% @parsedData["nlmRxImages"].each do |image|%>
-<li>
-<%= image[["nlmRxImages"][0][7]] %>
-</li>
-<%=image_tag @prescription.image(:medium)%>
-<% end %>
-</ul>
+  <h1>Image</h1>
+    <ul>
+      <% @parsedData["nlmRxImages"].each do |image|%>
+        <li>
+          <%= image[["nlmRxImages"][0][7]] %>
+          <% puts "this is the current time: #{Time.now()}" %>
+        </li>
+          <%=image_tag @prescription.image(:medium)%>
+      <% end %>
+    </ul>
 
 <%=link_to "Back", root_path %>
 <%=link_to "Edit", edit_prescription_path(@prescription)%>
