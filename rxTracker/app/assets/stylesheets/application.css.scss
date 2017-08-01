@@ -27,11 +27,7 @@
 
  body {
  	height: 100%;
-   background: -webkit-linear-gradient(90deg, lightblue 10%, Darkblue 90%);
-   background:    -moz-linear-gradient(90deg, lightblue 10%, Darkblue 90%);
-   background:     -ms-linear-gradient(90deg, lightblue 10%, Darkblue 90%);
-   background:      -o-linear-gradient(90deg, lightblue 10%, Darkblue 90%);
-   background:         linear-gradient(90deg, lightblue 10%, Darkblue 90%);
+   background: darkgray;
    font-family: 'Lato', sans-serif;
  }
 
@@ -83,7 +79,7 @@ p{
 
   color: #216979;
   padding: 10px;
-  margin: 10px;
+  align: center;
 }
 a{
   color: #216979;

@@ -7,7 +7,7 @@ def index
 end
 
 def show
-  puts "this is the params woot woot: #{params}"
+  puts "this is the params #{params}"
   @prescriptionimg = Prescription.find(params[:id])
   require 'uri'
   require 'net/http'

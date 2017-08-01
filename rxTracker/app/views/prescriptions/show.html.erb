@@ -6,12 +6,12 @@
 <%@parsedData = JSON.parse(@body)%>
   <h1>Image</h1>
     <ul>
-      <% @parsedData["nlmRxImages"].each do |image|%>
+      <% @parsedData["nlmRxImages"].each do |image, url|%>
         <li>
           <%= image[["nlmRxImages"][0][7]] %>
           <% puts "this is the current time: #{Time.now()}" %>
         </li>
-          <%=image_tag @prescription.image(:medium)%>
+          <%=image_tag @prescription.image([["nlmRxImages"][0][7]])%>
       <% end %>
     </ul>
 
